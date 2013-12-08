@@ -16,7 +16,7 @@ public class VocabFrame extends WolframJavaFrame {
 	
 	void go( Vocab V ) {
 		getContentPane().setBackground( new Color(222,222,222) );	// Set to light grey
-		getContentPane().add( BorderLayout.NORTH, new NorthPanel() );
+		getContentPane().add( BorderLayout.NORTH, new NorthPanel( false ) );	// False indicates 'Not Home Screen'
 		getContentPane().add( BorderLayout.EAST, new EmptyPanel( getWidth()/4, 100 ) );
 		getContentPane().add( BorderLayout.WEST, new EmptyPanel( getWidth()/4, 100 ) );
 		getContentPane().add( BorderLayout.CENTER, new CenterPanel( V, getWidth()/2, 1120 ) );
